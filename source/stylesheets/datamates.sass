@@ -72,6 +72,13 @@ a
 .hero
   background-color: $tint
   padding: 6em 0 3em 0
+  
+  .logo
+    width: 100%
+
+  h1
+    visibility: hidden
+    height: 0px
 
   h2
     color: $dark-brand
@@ -91,6 +98,24 @@ a
   border-top: 1px solid $light-brand
   border-bottom: 1px solid $light-brand
 
+  h3 
+    font-size: 1.25em
+    color: $dark-brand
+    margin: 0 0 1.5em 0
+
+  label
+    font-size: 0.5em
+    color: darken($light-brand, 10%)
+
+    input 
+      border-radius: 5px
+      margin: 0.125em 0 0 0
+      background-color: $tint
+      border-color: $light-brand
+      box-shadow: none
+      color: $dark-brand
+      &:focus
+        border-color: $brand
 // Introductory letter
 #hello-world
   background-color: #fff
@@ -111,3 +136,8 @@ a
     h4
       font-weight: 800
       color: $dark-brand
+
+// footer
+#site-footer
+  p
+    color: #3C506F

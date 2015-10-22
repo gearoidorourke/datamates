@@ -1,18 +1,23 @@
 %section#newsletter
   .row
-    %h3.large-12.columns Sign up now to get first access to tickets on November 1st
-    %form
+    %h3.large-12.columns Sign up now to get first access to tickets on November 1st. We promise to <b>never</b> spam you.
+    %form(action="//datamat.us12.list-manage.com/subscribe/post?u=cb855305b7d476a301bc8db16&amp;id=87c052671d" method="post" target="_blank" )
       .large-3.medium-6.small-12.columns
         %label
           First name
-          <input type="text" placeholder="First name" />
+          <input type="text" value="" name="FNAME" placeholder="First name" required/>
       .large-3.medium-6.small-12.columns
         %label
-          First name
-          <input type="text" placeholder="First name" />
+          Last name
+          <input type="text" value="" name="LNAME" placeholder="Name name" required/>
       .large-3.medium-6.small-12.columns
         %label
-          First name
-          <input type="text" placeholder="First name" />
+          Email address
+          <input type="email" value="" name="EMAIL" placeholder="Email address" required/>
+          <input type="text" name="b_cb855305b7d476a301bc8db16_87c052671d" tabindex="-1" value="" style="display:none;">
       .large-3.medium-6.small-12.columns
-        %button.button.expand Sign up
+        %button.button.expand(type="submit") Sign up
+
+
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
