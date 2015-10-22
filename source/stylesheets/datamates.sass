@@ -1,3 +1,4 @@
+// Colors
 $action-neg:	#F12A53
 $action-pos:	#00DDBB
 $brand:			  #0095F2
@@ -5,6 +6,19 @@ $dark-brand:	#01368C
 $light-brand:	#DAEBF7
 $text:			  #061938
 $tint:				#EEF7FC
+
+
+// Some general resetting
+body
+  background-color: $text
+  color:            $text
+  font-family:      "Whitney SSm A", "Whitney SSm B"
+  font-style:       normal
+  font-weight:      400
+
+header, footer, section
+  padding: 3em 0
+
 
 // Typohraphy
 h1, h2, h3, h4, h5, h6, p
@@ -25,44 +39,75 @@ h3
   border-top: 0.25em solid #fff
   line-height: 2.25
 
-article
+// Links & buttons
+a
+  color: $brand
+
+.button
+  font-family:      "Whitney SSm A", "Whitney SSm B"
+  border-radius: 5px
+  background-color: $action-pos
+  &:hover
+    background-color: darken($action-pos, 4%)
+
+// Twitter bar across top of screen
+#follow-us
+  background-color: #ffffff
+  border-bottom: 10px solid $light-brand
+  padding: 1em 0 0 0
+
+  p
+    margin: 0
+    padding: 0
+    font-style: italic
+    text-align: center
+    font-size: 1.25em
+    line-height: 1
+    color: $dark-brand
+    a
+      margin-left: 1em
+      font-weight: 800
+
+// Home page hero area
+.hero
+  background-color: $tint
+  padding: 6em 0 3em 0
+
+  h2
+    color: $dark-brand
+    font-size: 2.125em
+
+    span
+      font-weight: 800
+      color: $brand
+      display: block
+
+.event-details
+  margin: 6em 0 0 0
+
+// Newsletter signup form
+#newsletter
+  background-color: #fff
+  border-top: 1px solid $light-brand
+  border-bottom: 1px solid $light-brand
+
+// Introductory letter
+#hello-world
+  background-color: #fff
+  padding: 6em 0
+
   h1
     font-style: normal
     font-weight: 800
     font-size: 3em
     margin-bottom: 0.5em
 
-aside
-  font-style: italic
+  aside
+    margin-top: 6em
+    font-style: italic
+    border-left: 1px solid $light-brand
+    padding-left: 2em
 
-// Links & buttons
-a
-  color: $brand
-
-body
-  background-color: $text
-  color:            $text
-  font-family:      "Whitney SSm A", "Whitney SSm B"
-  font-style:       normal
-  font-weight:      400
-
-header, footer, section
-  padding: 3em 0
-
-#follow-us
-  background-color: #ffffff
-  border-bottom: 10px solid $light-brand
-
-.hero
-  background-color: $tint
-
-.event-details
-  padding: 2em 0 0 0
-
-#newsletter
-  background-color: #fff
-  border-top: 1px solid $light-brand
-  border-bottom: 1px solid $light-brand
-
-#hello-world
-  background-color: #fff
+    h4
+      font-weight: 800
+      color: $dark-brand
