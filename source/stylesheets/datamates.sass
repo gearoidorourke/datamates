@@ -17,7 +17,7 @@ body
   font-weight:      400
 
 header, footer, section
-  padding: 3em 0
+  padding: 4em 0
 
 
 // Typohraphy
@@ -27,6 +27,17 @@ h1, h2, h3, h4, h5, h6, p
 
 h3
   font-size: 1.75em
+
+.section-header
+  color: $dark-brand
+  text-transform: uppercase
+  font-weight: 800
+  font-size: 3.25em
+  letter-spacing: -1px
+  line-height: 0.8
+  position: relative
+  z-index: 2
+
 
 .standfirst
   font-size: 1.5em
@@ -72,7 +83,7 @@ a
 .hero
   background-color: $tint
   padding: 6em 0 3em 0
-  
+
   .logo
     width: 100%
 
@@ -98,7 +109,7 @@ a
   border-top: 1px solid $light-brand
   border-bottom: 1px solid $light-brand
 
-  h3 
+  h3
     font-size: 1.25em
     color: $dark-brand
     margin: 0 0 1.5em 0
@@ -107,7 +118,7 @@ a
     font-size: 0.5em
     color: darken($light-brand, 10%)
 
-    input 
+    input
       border-radius: 5px
       margin: 0.125em 0 0 0
       background-color: $tint
@@ -116,6 +127,32 @@ a
       color: $dark-brand
       &:focus
         border-color: $brand
+// Tickets
+.tickets
+  background: #fff
+// Speakers
+.speakers
+  background-color: $brand
+  padding: 6em 0
+
+
+.speaker
+  padding: 0 0 2em 0
+
+
+  h1
+    font-weight: 800
+    color: #fff
+  p
+    color: #fff
+  a
+    color: $light-brand
+    font-weight: 600
+
+
+.speaker+.speaker
+  border-top: 1px dotted $dark-brand
+  padding-top: 2em
 // Introductory letter
 #hello-world
   background-color: #fff
@@ -136,6 +173,8 @@ a
     h4
       font-weight: 800
       color: $dark-brand
+
+
 
 // footer
 #site-footer
